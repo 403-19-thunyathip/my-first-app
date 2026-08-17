@@ -36,7 +36,6 @@ def show_result_dialog(ans1, ans2):
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
 
-
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
     if score == 2:
@@ -70,13 +69,12 @@ ans2 = st.text_input(
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
 
-
-
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
     if st.button("📥 ส่งคำตอบ"):
         st.session_state.is_ended = True
         st.rerun()
 
+    # ย้าย time.sleep และ st.rerun มาไว้ในเงื่อนไขเวลานับถอยหลังแทนการวางลอยๆ
     time.sleep(1)
     st.rerun()
 
@@ -84,4 +82,5 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2)
 
 st.divider()
-  st.write("นางสาวธัญทิพ เชาวน์รุ่งเมธี เลขที่ 19 ม.4/3")
+# แก้จุดที่ 1: ลบ Indentation (เว้นวรรค) ด้านหน้าออก
+st.write("นางสาวธัญทิพ เชาวน์รุ่งเมธี เลขที่ 19 ม.4/3")าวน์รุ่งเมธี เลขที่ 19 ม.4/3")
