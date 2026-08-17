@@ -82,5 +82,4 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2)
 
 st.divider()
-# แก้จุดที่ 1: ลบ Indentation (เว้นวรรค) ด้านหน้าออก
-st.write("นางสาวธัญทิพ เชาวน์รุ่งเมธี เลขที่ 19 ม.4/3")าวน์รุ่งเมธี เลขที่ 19 ม.4/3")
+st.write("นางสาวธัญทิพ เชาวน์รุ่งเมธี เลขที่ 19 ม.4/3")
